@@ -11,7 +11,7 @@ vignette: >
 
 ## Overview
 
-__StatComp__ is a simple R package developed to compare the performance of R and R++ (implemented through the R package _Rcpp_) for the 'Statistical Computing' course. Two functions are considered, namely, _sse_ (Use stratified sampling to estimate the integration.) and _xt_ (estimate the number of events in possion process). For each function, both R and Rcpp versions are produced. Namely _sseR_ and  _xtR_ for R and _sseC_ and _xtC_ for C++.
+__SC19089__ is a simple R package developed to compare the performance of R and R++ (implemented through the R package _Rcpp_) for the 'Statistical Computing' course. Three functions are considered, namely, _sse_ (Use stratified sampling to estimate the integration.) and _xt_ (estimate the number of events in possion process) and _Brown_(plot of st Brownian Motion). For each function, both R versions are produced.
 
 The R package 'microbenchmark' can be used to benchmark the above R and C++ functions.
 
@@ -144,7 +144,9 @@ for(i in 1:m){
 }
 Brown(1,6)
 ```
+
 ## all hw
+
 hw 9.29
 ```{r}
 # 3.4
@@ -351,6 +353,7 @@ c
 ```
 
 hw 11.01
+
 6.7:use R to compute the rejected proportion,because of the proportion too small,the power is not robust.but when sample from t(v),we can said the power better.in the first figure,we know when ε=0.8，the power is greatest.in tne next figure,we know the ε smaller,the power greater.
 6.A:we know when the sample population is non-normality,compare the results,the sample form uniform distribution have a rate which close to the nominal rate(0.05).
 ```{r}
